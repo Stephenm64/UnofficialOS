@@ -32,7 +32,7 @@
     PARTITION_TABLE="gpt"
     UBOOT_LABEL="uboot"
     TRUST_LABEL="resource"
-    DEVICE_DTB=("rk3566-rg353p-linux" "rk3566-rg353v-linux")
+    DEVICE_DTB=("rk3566-rg353p-linux" "rk3566-rg353v-linux" "rk3566-353v2-notimingchange")
     UBOOT_DTB="rk3566"
     UBOOT_CONFIG="rk3568_defconfig"
     PKG_SOC="rk356x"
@@ -43,7 +43,7 @@
 
   # Additional kernel make parameters (for example to specify the u-boot loadaddress)
     KERNEL_MAKE_EXTRACMD=""
-    KERNEL_MAKE_EXTRACMD+=" rockchip/${DEVICE_DTB[0]}.dtb rockchip/${DEVICE_DTB[1]}.dtb"
+    KERNEL_MAKE_EXTRACMD+=" rockchip/${DEVICE_DTB[0]}.dtb rockchip/${DEVICE_DTB[1]}.dtb rockchip/${DEVICE_DTB[2]}.dtb"
 
   # Display Resolution
     SPLASH_RESOLUTION="640x480"
